@@ -25,4 +25,5 @@ Pilih Start Capture
 Kemudian setelah Wireshark terbuka, kembali ke terminal Mika
 Jalankan: ./traffic_protocol7.sh
 Screenshots hasil:
-![alt text](assets/wire6_pt1)
+![alt text](assets/wire6_pt1.png)
+![alt text](assets/wire6_pt2.png)
