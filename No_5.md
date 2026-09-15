@@ -1,7 +1,9 @@
-Petunjuk:
+# Langkah_Langkah
+
 Masuk ke root@Lain
 
 Jalanin: 
+```bash
 cat << 'EOF' > /root/cek_status.sh
 #!/bin/bash
 
@@ -26,10 +28,16 @@ echo ""
 
 echo "VERIFIKASI SELESAI & SIAP BEROPERASI"
 EOF
-
+```
 
 Jalanin:
+```bash 
 chmod +x /root/cek_status.sh
+```
 
 Jalanin:
+```bash
 /root/cek_status.sh
+```
+
+Kalau semisal pas dijalanin ngeluarin hasil dari `ip -br a` dan tabel NAT, berati berhasil. 

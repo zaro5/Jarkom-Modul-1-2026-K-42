@@ -1,3 +1,13 @@
+# Langkah-Langkah
+
+## Config awal buat Lain
+
+Masuk ke file dengan command
+```bash
+nano /etc/network/interfaces
+```
+
+```bash
 auto lo
 iface lo inet loopback
 
@@ -22,7 +32,7 @@ auto eth3
 iface eth3 inet static
     address 192.168.3.1
     netmask 255.255.255.0
-
+```
 
 
 
@@ -36,7 +46,7 @@ root@Lain:~# ip link set eth3 up
 
 root@Lain:~# ip addr add 192.168.1.1/24 dev eth1
 root@Lain:~# ip addr add 192.168.2.1/24 dev eth2
-ip addr add 192.168.3.1/24 dev eth3
+root@Lain:~# ip addr add 192.168.3.1/24 dev eth3
 
 
 root@Lain:~# ip addr add 192.168.122.100/24 dev eth0
@@ -45,5 +55,5 @@ root@Lain:~# echo "nameserver 8.8.8.8" > /etc/resolv.conf
 root@Lain:~# ping -c 3 8.8.8.8
 
 root@Lain:~# sysctl -w net.ipv4.ip_forward=1
-iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
-net.ipv4.ip_forward = 1
+root@Lain:~# iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+root@Lain:~# net.ipv4.ip_forward = 1
