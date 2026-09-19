@@ -14,9 +14,9 @@ useradd -m -d /var/wired/data -s /usr/sbin/nologin eiri
 
 kemudian masukkan pwd:
 ```bash
-echo "alice:password123" | chpasswd
-echo "mika:password123" | chpasswd
-echo "eiri:password123" | chpasswd
+echo "alice:alice" | chpasswd
+echo "mika:mika" | chpasswd
+echo "eiri:eiri" | chpasswd
 ```
 
 
