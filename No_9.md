@@ -5,7 +5,7 @@ Down file protocol7_manifesto.txt ke container Chisa.
 
 Masuk ke container Mika, login ke akun Chisa menggunakan FTP atau lftp.
 ```bash
-lftp - u mika,password123 192.232.2.2
+lftp - u mika,mika 192.232.2.2
 ``` 
 Catatan: 
 - Sesuaikan password dengan yang telah di tentukan sebelumnya. 
