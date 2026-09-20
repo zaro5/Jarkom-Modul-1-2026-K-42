@@ -51,7 +51,17 @@ ip route add default via 192.168.3.1 dev eth0
 echo "nameserver 8.8.8.8" > /etc/resolv.conf
 ```
 
-Mika
+Mika (masuk ke nano /etc/network/interfaces)
+```bash
+# Static config for eth0
+auto eth0
+iface eth0 inet static
+        address 192.232.1.3
+        netmask 255.255.255.0
+        gateway 192.232.1.1
+        up echo nameserver 192.232.1.1 > /etc/resolv.conf
+```
+
 ```bash
 telnet 10.4.89.247 5061
 ip link set dev eth0 up
